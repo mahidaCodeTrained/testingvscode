@@ -23,3 +23,4 @@ else:
     prime_status = "not a prime number"
 
 print(f"The number is {sign} and {prime_status}.")
+5
