@@ -1,13 +1,18 @@
-user_name = input("What is your username: ")
+while True:
+    name = input("Please enter your name: ")
+    age = input("Please enter your age: ")
 
-if user_name:
-    print(f"Thank you we got it {user_name}")
-else:
-    print("You need to enter a username")
+    # Check if age is a valid number
+    if not age.isdigit():
+        print("Invalid age. Please enter a valid number for age.")
+        continue
 
-user_age = input("How old are you: ")
+    # Check if name is not empty
+    if not name:
+        print("Invalid name. Please enter a valid name.")
+        continue
 
-if user_age is int:
-    print(f"Thanks so much you are {user_age}")
-else:
-    print("This is not a valid age.")
+    # If inputs are valid, break out of the loop
+    break
+
+print(f"Hello {name}, you are {age} years old.")
