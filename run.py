@@ -23,8 +23,9 @@ class Customer(TicketMixin):
         self.age = age
 
     def describe(self):
-        return f"{self.name} age {self.age} ticket price will be {self.calculate_ticket_prices(self.age)}"
+        return f"{self.name} age {self.age} ticket price will be \
+{self.calculate_ticket_prices(self.age)}"
 
 
-customer = Customer('Abhi', 17)
+customer = Customer('Shivani', 11)
 print(customer.describe())
